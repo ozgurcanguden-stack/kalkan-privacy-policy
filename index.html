@@ -4,40 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kalkan Gizlilik Politikası</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #191c1e;
+      background: #f7f9fb;
+      margin: 0;
+      padding: 24px 16px 48px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e0e3e5;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    h1 { font-size: 1.75rem; margin-top: 0; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    .meta { color: #76777d; }
+    a { color: #0051d5; }
+  </style>
 </head>
 <body>
+<main>
 <h1>Kalkan Gizlilik Politikası</h1>
-<p>Son güncelleme: 31.05.2026</p>
+<p class="meta">Son güncelleme: 31.05.2026</p>
 
-<p>Kalkan - Afet ve Acil Durum Platformu; afet ve acil durumlarda kullanıcıların güvenlik durumlarını paylaşabilmesi, aile üyeleriyle iletişim kurabilmesi, acil kişilerini yönetebilmesi, deprem verilerini görüntüleyebilmesi ve acil durum bilgilerini saklayabilmesi amacıyla geliştirilmiştir.</p>
+<p>Kalkan - Afet ve Acil Durum Platformu; afet ve acil durumlarda kullanıcıların güvenlik durumlarını paylaşabilmesi, aile üyeleriyle iletişim kurabilmesi, acil kişilerini yönetebilmesi, deprem verilerini görüntüleyebilmesi, harita üzerinden konum ve deprem bilgilerini takip edebilmesi ve acil durum bilgilerini saklayabilmesi amacıyla geliştirilmiştir.</p>
 
 <h2>Geliştirici Bilgileri</h2>
 <p>Geliştirici: Özgür Can Güden<br>
-E-posta: ozgurcanguden@gmail.com</p>
+E-posta: <a href="mailto:ozgurcanguden@gmail.com">ozgurcanguden@gmail.com</a></p>
 
 <h2>Toplanan Veriler</h2>
 <ul>
   <li>Ad, e-posta, profil fotoğrafı ve kullanıcı kimliği</li>
   <li>Google veya misafir giriş bilgileri</li>
-  <li>Konum bilgisi</li>
+  <li>Konum bilgisi (kullanıcı işlem başlattığında)</li>
+  <li>Güvenlik durumu (SOS, Yardım, İyiyim, Konum Paylaş) ve buna bağlı son konum koordinatları</li>
   <li>Acil kişi adı, telefon numarası ve yakınlık bilgisi</li>
-  <li>Aile grubu, davet kodu ve güvenlik durumu bilgileri</li>
-  <li>Kan grubu, alerji, kronik hastalık, ilaç ve acil not bilgileri</li>
+  <li>Aile grubu, davet kodu ve grup üyeliği bilgileri</li>
+  <li>Kan grubu, alerji, kronik hastalık, ilaç ve acil not bilgileri (Acil Durum Kartı)</li>
   <li>Bildirim tokenı ve bildirim izin durumu</li>
   <li>Yedekleme ve senkronizasyon bilgileri</li>
 </ul>
 
 <h2>Verilerin Kullanım Amaçları</h2>
-<p>Veriler; kullanıcı hesabını yönetmek, SOS/Yardım/İyiyim/Konum Paylaş özelliklerini çalıştırmak, aile üyelerine güvenlik durumunu göstermek, acil kişilere manuel arama/SMS/WhatsApp başlatmak, duyuru ve acil durum bildirimleri göndermek, harita ve deprem özelliklerini çalıştırmak için kullanılır.</p>
+<p>Veriler; kullanıcı hesabını yönetmek, SOS/Yardım/İyiyim/Konum Paylaş özelliklerini çalıştırmak, aile üyelerine güvenlik durumunu ve paylaşılan konumu göstermek, acil kişilere manuel arama/SMS/WhatsApp başlatmak, duyuru ve acil durum bildirimleri göndermek, harita ekranında deprem ve aile konumlarını görüntülemek, deprem listelerini filtrelemek ve acil durum kartını saklamak için kullanılır.</p>
 
 <h2>Konum Verileri</h2>
-<p>Kalkan, kullanıcıyı sürekli arka planda takip etmez. Konum yalnızca kullanıcı Konum Paylaş veya SOS gibi işlemleri başlattığında alınır.</p>
+<p>Kalkan, kullanıcıyı sürekli arka planda takip etmez. Konum yalnızca kullanıcı SOS, Yardım veya Konum Paylaş gibi işlemleri bilinçli olarak başlattığında alınır.</p>
+<p>Paylaşılan konum, yalnızca kullanıcının bağlı olduğu aile grubu üyelerine gösterilir. Harita ekranında bu konumlar işaretleyici (marker) olarak görüntülenebilir. Kullanıcı isterse bir konumu harici Google Maps uygulamasında veya tarayıcıda açabilir; bu işlem cihazınızdaki Google Maps ile gerçekleşir.</p>
+
+<h2>Harita ve Deprem Verileri</h2>
+<p>Uygulama içi harita görünümü Google Maps Platform ile sunulur. Harita karolarının yüklenmesi sırasında Google tarafından teknik veriler (ör. IP adresi, cihaz bilgisi) işlenebilir. Google’ın veri işleme uygulamaları için <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası</a> geçerlidir.</p>
+<p>Deprem bilgileri AFAD’ın kamuya açık servislerinden alınır. Bu veriler genel sismolojik kayıtlardır; kişisel veri niteliğinde değildir. Deprem konumları haritada ve listelerde gösterilebilir.</p>
 
 <h2>Acil Durum Kartı</h2>
 <p>Acil Durum Kartı isteğe bağlıdır. Kan grubu, alerjiler, kronik hastalıklar, kullanılan ilaçlar ve acil not bilgileri yalnızca kullanıcının kendi hesabında saklanır. Aile üyeleri, yöneticiler veya diğer kullanıcılar bu bilgilere erişemez.</p>
 
 <h2>Verilerin Paylaşımı</h2>
-<p>Kalkan kullanıcı verilerini satmaz. Veriler yalnızca uygulamanın çalışması için Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging, Cloud Functions ve Google Maps Platform gibi hizmetlerle işlenebilir.</p>
+<p>Kalkan kullanıcı verilerini satmaz. Veriler yalnızca uygulamanın çalışması için aşağıdaki hizmet sağlayıcılarla işlenebilir:</p>
+<ul>
+  <li>Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging, Cloud Functions (Google / Firebase)</li>
+  <li>Google Maps Platform (harita görüntüleme)</li>
+  <li>AFAD deprem servisi (kamuya açık deprem verisi)</li>
+</ul>
 
 <h2>Veri Güvenliği</h2>
 <p>Veriler Firebase ve Google Cloud altyapısında saklanır. Aktarım sırasında şifreli bağlantılar kullanılır. Firestore güvenlik kurallarıyla yetkisiz erişim engellenmeye çalışılır.</p>
@@ -59,6 +95,7 @@ E-posta: ozgurcanguden@gmail.com</p>
 
 <h2>İletişim</h2>
 <p>Özgür Can Güden<br>
-E-posta: ozgurcanguden@gmail.com</p>
+E-posta: <a href="mailto:ozgurcanguden@gmail.com">ozgurcanguden@gmail.com</a></p>
+</main>
 </body>
 </html>
